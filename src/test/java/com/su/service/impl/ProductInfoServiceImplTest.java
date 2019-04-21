@@ -1,5 +1,6 @@
 package com.su.service.impl;
 
+import com.su.dto.CartDTO;
 import com.su.model.ProductInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -44,5 +46,23 @@ public class ProductInfoServiceImplTest {
 
     @Test
     public void save() {
+    }
+
+    @Test
+    public void increaseStockTest(){
+        List<CartDTO> cartDTOList = new ArrayList<>();
+        cartDTOList.add(new CartDTO("1", 11));
+        cartDTOList.add(new CartDTO("2", 22));
+
+        productInfoService.increaseStock(cartDTOList);
+    }
+
+    @Test
+    public void decreaseStockTest(){
+        List<CartDTO> cartDTOList = new ArrayList<>();
+        cartDTOList.add(new CartDTO("1", 11));
+        cartDTOList.add(new CartDTO("2", 10));
+
+        productInfoService.decreaseStock(cartDTOList);
     }
 }

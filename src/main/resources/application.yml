@@ -18,6 +18,10 @@ spring:
   jpa:
     # 控制台打印出SQL语句，方便调试
     show-sql: true
+  #全局的配置：当对象属性值为null时，不将其序列化到json数据中
+  #jackson:
+   # default-property-inclusion: non_null
 server:
   servlet:
     context-path: /sell
+
