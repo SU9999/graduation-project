@@ -1,0 +1,23 @@
+#配置日志
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  file: /Users/mac/Documents/workspace/graduation/log/sell.log
+#  level:
+#    com.su.logger.LoggerTest: debug
+
+
+#配置数据库设置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    # 设置数据库连接url，并指定字符集为uft-8，并且忽略ssl连接模式
+    url: jdbc:mysql://172.18.114.90:3306/graduation?characterEncoding=utf-8&useSSL=false
+  jpa:
+    # 控制台打印出SQL语句，方便调试
+    show-sql: true
+server:
+  servlet:
+    context-path: /sell
