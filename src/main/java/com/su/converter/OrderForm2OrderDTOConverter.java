@@ -23,7 +23,7 @@ public class OrderForm2OrderDTOConverter {
         orderDTO.setBuyerName(orderForm.getName());
         orderDTO.setBuyerAddress(orderForm.getAddress());
         orderDTO.setBuyerPhone(orderForm.getPhone());
-        orderDTO.setBuyerOpenid(orderForm.getPhone());
+        orderDTO.setBuyerOpenid(orderForm.getOpenid());
 
         // 使用gson作为json格式转换组件
         Gson gson = new Gson();

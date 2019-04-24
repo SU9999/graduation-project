@@ -34,6 +34,9 @@ public class BuyerServiceImpl implements BuyerService {
         return orderDTO;
     }
 
+    /**
+     * 买家取消订单
+     * */
     @Override
     public OrderDTO cancelOrder(String openid, String orderId) {
         // 查询出该订单

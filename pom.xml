@@ -41,10 +41,10 @@
             <!--<scope>runtime</scope>-->
         </dependency>
         <!--thymeleaf：使用静态资源时使用-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+        </dependency>-->
         <!--微信授权的第三方SDK-->
         <dependency>
             <groupId>com.github.binarywang</groupId>
@@ -56,6 +56,11 @@
             <groupId>cn.springboot</groupId>
             <artifactId>best-pay-sdk</artifactId>
             <version>1.1.0</version>
+        </dependency>
+        <!--使用FreeMarker组件-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
         <!--lombok插件使用-->
         <dependency>

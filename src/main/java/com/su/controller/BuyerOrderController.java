@@ -60,6 +60,7 @@ public class BuyerOrderController {
         }
 
         /** 创建表单 */
+        log.error("【创建表单，BuyerOrderController】openid={}", orderForm.getOpenid());
         // 通过orderForm对象中的参数，构造orderDTO对象
         OrderDTO orderDTO = OrderForm2OrderDTOConverter.convert(orderForm);
         if (CollectionUtils.isEmpty(orderDTO.getOrderDetailList())){

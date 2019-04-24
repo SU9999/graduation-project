@@ -29,3 +29,9 @@ server:
 wechat:
   mpAppId: wxe227becfe60132e2
   mpAppSecret: 534253ebd7cdae3711f401a3c4b13ecb
+  #以下信息不真实
+  mchId: 1409146202
+  mchKey: c976503d34ca432c601361f969fd8d85
+  keyPath: /Users/mac/Documents/workspace/graduation/graduation-project/doc/h5.p12
+  notifyUrl: http://su110.natapp1.cc/sell/pay/notify
+

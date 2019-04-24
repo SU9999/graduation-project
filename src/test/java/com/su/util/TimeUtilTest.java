@@ -7,4 +7,13 @@ public class TimeUtilTest {
     public void testTimeMill(){
         System.out.println(System.currentTimeMillis());
     }
+
+    @Test
+    public void testDouble(){
+        Double d1 = new Double(0.01);
+        Double d2 = new Double(0.01);
+
+        System.out.println(d1.equals(d2));
+        System.out.println(0.01==0.01);
+    }
 }

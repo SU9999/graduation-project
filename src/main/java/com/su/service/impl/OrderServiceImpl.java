@@ -13,6 +13,7 @@ import com.su.model.ProductInfo;
 import com.su.repository.OrderDetailRepository;
 import com.su.repository.OrderMasterRepository;
 import com.su.service.OrderService;
+import com.su.service.PayService;
 import com.su.service.ProductInfoService;
 import com.su.util.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -47,6 +48,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private OrderMasterRepository masterRepository;
+
+    @Autowired
+    private PayService payService;
 
     /**
      * 添加事务操作
@@ -179,10 +183,10 @@ public class OrderServiceImpl implements OrderService {
                 .collect(Collectors.toList());
         productInfoService.increaseStock(cartDTOList);
 
-        // TODO
         /** Step4：如果已支付，退款给买家 */
         if (orderMaster.getPayStatus() == PayStatusEnum.SUCCESS.getCode()) {
-            // TODO
+            // TODO 由于系统此时无法接入到微信支付和退款相关的API，因此下面申请微信退款的功能暂时注释
+//            payService.refund(orderDTO);
         }
         // 重新设置返回的数据
         BeanUtils.copyProperties(orderMaster, orderDTO);
@@ -241,9 +245,6 @@ public class OrderServiceImpl implements OrderService {
         } catch (NoSuchElementException e) {
             throw new SellException(ResultEnum.ORDER_NOT_EXIST);
         }
-
-        // TODO
-        /** Step3: 支付 */
 
         /** Step4: 修改订单支付状态 */
         orderMaster.setPayStatus(PayStatusEnum.SUCCESS.getCode());
