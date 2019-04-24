@@ -24,7 +24,6 @@ public interface ProductInfoService {
     /** 新增/修改商品 */
     public ProductInfo save(ProductInfo productInfo);
 
-    //TODO
     /** 加库存 */
     void increaseStock(List<CartDTO> cartDTOList);
 

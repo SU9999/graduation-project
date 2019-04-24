@@ -20,6 +20,8 @@ public enum ResultEnum {
     PARAM_ERROR(19, "参数不正确"),
     ORDER_CART_EMPTY(20, "订单购物车为空"),
     ORDER_OWNER_ERROR(21, "该订单不属于当前用户，没有访问权限"),
+    WECHAT_MP_AUTH_FAILED(22, "微信用户授权失败"),
+    JSON_READ_ERROR(23, "解析json格式文件错误"),
     ;
 
     private int code;

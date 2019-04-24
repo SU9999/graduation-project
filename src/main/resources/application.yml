@@ -23,5 +23,9 @@ spring:
    # default-property-inclusion: non_null
 server:
   servlet:
+    # 临时去掉路径名，用于微信验证域名
     context-path: /sell
 
+wechat:
+  mpAppId: wxe227becfe60132e2
+  mpAppSecret: 534253ebd7cdae3711f401a3c4b13ecb

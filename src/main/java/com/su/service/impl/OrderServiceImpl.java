@@ -135,6 +135,7 @@ public class OrderServiceImpl implements OrderService {
 
             return orderDTO;
         } catch (NoSuchElementException e) {
+            log.error("该订单不存在，orderId={}", orderId);
             throw new SellException(ResultEnum.ORDER_NOT_EXIST);
         }
     }

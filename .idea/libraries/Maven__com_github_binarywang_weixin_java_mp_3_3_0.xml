@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.binarywang:weixin-java-mp:3.3.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/binarywang/weixin-java-mp/3.3.0/weixin-java-mp-3.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/binarywang/weixin-java-mp/3.3.0/weixin-java-mp-3.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/binarywang/weixin-java-mp/3.3.0/weixin-java-mp-3.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-common/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-common/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-cp/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-cp/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-miniapp/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-miniapp/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-mp/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-mp/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-open/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-pay/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-pay/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
