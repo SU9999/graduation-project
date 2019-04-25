@@ -14,4 +14,7 @@ import java.util.Set;
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Integer> {
 
     List<ProductCategory> findByCategoryTypeIn(Set<Integer> categoryTypeList);
+
+    /** 根据categoryType查询单个类目信息：categoryType字段设置了唯一键约束 */
+    ProductCategory findByCategoryType(Integer categoryType);
 }

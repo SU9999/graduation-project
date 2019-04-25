@@ -258,4 +258,16 @@ public class OrderServiceImpl implements OrderService {
         BeanUtils.copyProperties(orderMaster, orderDTO);
         return orderDTO;
     }
+
+    @Override
+    public Page<OrderDTO> findAll(Pageable pageable) {
+        // 查询所有的订单
+        Page<OrderMaster> page = masterRepository.findAll(pageable);
+        // 将查询的OrderMaster对象全部转化为OrderDTO对象
+        List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConverter.convert(page.getContent());
+
+        // 构造返回对象
+        Page<OrderDTO> orderDTOPage = new PageImpl<>(orderDTOList, pageable, page.getTotalElements());
+        return orderDTOPage;
+    }
 }

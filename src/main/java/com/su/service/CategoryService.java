@@ -10,11 +10,13 @@ import java.util.Set;
  */
 public interface CategoryService {
 
-    public ProductCategory findById(Integer categoryId);
+    ProductCategory findById(Integer categoryId);
 
-    public List<ProductCategory> findAll();
+    List<ProductCategory> findAll();
 
-    public List<ProductCategory> findByCategoryTypeIn(Set<Integer> categoryTypeList);
+    List<ProductCategory> findByCategoryTypeIn(Set<Integer> categoryTypeList);
 
-    public ProductCategory save(ProductCategory category);
+    ProductCategory save(ProductCategory category);
+
+    ProductCategory findByCategoryType(Integer categoryType);
 }

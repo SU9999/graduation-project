@@ -7,13 +7,13 @@ import org.aspectj.weaver.ast.Or;
  * 订单状态枚举：
  */
 @Getter
-public enum OrderStatusEnum {
+public enum OrderStatusEnum implements IStatusEnum{
     NEW(0, "新订单"),
-    FINISHED(1, "完结订单"),
-    CANCEL(2, "取消订单")
+    FINISHED(1, "已完结"),
+    CANCEL(2, "已取消")
     ;
 
-    private int code;
+    private Integer code;
     private String msg;
 
     OrderStatusEnum(int code, String msg){

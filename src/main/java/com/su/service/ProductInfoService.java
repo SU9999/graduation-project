@@ -1,6 +1,7 @@
 package com.su.service;
 
 import com.su.dto.CartDTO;
+import com.su.dto.OrderDTO;
 import com.su.model.ProductInfo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -29,4 +30,13 @@ public interface ProductInfoService {
 
     /** 减库存 */
     void decreaseStock(List<CartDTO> cartDTOList);
+
+    /** 卖家下架商品 */
+    void offSale(String productId);
+
+    /** 卖家上架商品 */
+    void onSale(String productId);
+
+    /** 根据categoryType查询商品 */
+    List<ProductInfo> findByCategoryType(Integer categoryType);
 }

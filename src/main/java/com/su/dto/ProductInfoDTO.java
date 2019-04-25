@@ -1,26 +1,19 @@
-package com.su.model;
+package com.su.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.su.enums.ProductStatusEnum;
 import com.su.util.EnumUtil;
 import lombok.Data;
-import org.hibernate.annotations.DynamicUpdate;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
- * 商品表：实体类
- */
-@Entity
 @Data
-@DynamicUpdate
-public class ProductInfo {
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ProductInfoDTO {
     /** 商品id */
-    @Id
     private String productId;
 
     /** 名字 */
@@ -39,7 +32,7 @@ public class ProductInfo {
     private String productIcon;
 
     /** 商品状态：0正常；1下架*/
-    private Integer productStatus = ProductStatusEnum.UP.getCode();
+    private Integer productStatus;
 
     /** 类目编号 */
     private Integer categoryType;
@@ -49,4 +42,12 @@ public class ProductInfo {
 
     /** 修改时间 */
     private Date updateTime;
+
+    /** 类目名称 */
+    private String categoryName;
+
+    @JsonIgnore
+    public ProductStatusEnum getProductStatusEnum(){
+        return EnumUtil.getStatusEnum(this.productStatus, ProductStatusEnum.class);
+    }
 }

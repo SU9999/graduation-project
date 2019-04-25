@@ -37,4 +37,9 @@ public class CategoryServiceImpl implements CategoryService {
     public ProductCategory save(ProductCategory category) {
         return categoryRepository.save(category);
     }
+
+    @Override
+    public ProductCategory findByCategoryType(Integer categoryType) {
+        return categoryRepository.findByCategoryType(categoryType);
+    }
 }

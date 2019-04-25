@@ -16,4 +16,10 @@ public class TimeUtilTest {
         System.out.println(d1.equals(d2));
         System.out.println(0.01==0.01);
     }
+
+    @Test
+    public void testString(){
+        Integer a = Integer.parseInt("");
+        System.out.println(a);
+    }
 }

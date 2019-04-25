@@ -49,4 +49,10 @@ public class CategoryServiceImplTest {
         ProductCategory result = categoryService.save(category);
         System.out.println(result);
     }
+
+    @Test
+    public void findByCategoryTypeTest(){
+        ProductCategory category = categoryService.findByCategoryType(10);
+        System.out.println(category);
+    }
 }

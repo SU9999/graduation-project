@@ -5,6 +5,14 @@
     <title>Demo</title>
 </head>
 <body>
-hello world！！
+<span id="time">4</span>
+<script>
+    var time = 3;
+    var interval = window.setInterval(function () {
+        var node = document.getElementById('time');
+        node.innerText = time;
+        time --;
+    }, 1000);
+</script>
 </body>
 </html>

@@ -7,6 +7,8 @@ import com.su.exception.SellException;
 import com.su.model.ProductInfo;
 import com.su.repository.ProductInfoRepository;
 import com.su.service.ProductInfoService;
+import com.su.util.EnumUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,6 +24,7 @@ import java.util.Optional;
  * 商品表实体类：Service层实现类
  */
 @Service
+@Slf4j
 public class ProductInfoServiceImpl implements ProductInfoService {
 
     @Autowired
@@ -32,7 +35,8 @@ public class ProductInfoServiceImpl implements ProductInfoService {
         Optional<ProductInfo> optional = productInfoRepository.findById(productId);
         try {
             return optional.get();
-        } catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
+            log.error("【查询商品】该商品不存在，productId={}", productId);
             throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
         }
     }
@@ -94,5 +98,42 @@ public class ProductInfoServiceImpl implements ProductInfoService {
                 throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
             }
         }
+    }
+
+
+    @Override
+    public void offSale(String productId) {
+        ProductInfo productInfo = findById(productId);
+        // Check status
+        if (productInfo.getProductStatus().equals(ProductStatusEnum.DOWN.getCode())) {
+            log.error("【下架商品】商品状态不正确，productStatus={}",
+                    EnumUtil.getStatusEnum(productInfo.getProductStatus(), ProductStatusEnum.class)
+                            .getMessage());
+            throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+        //修改商品状态
+        productInfo.setProductStatus(ProductStatusEnum.DOWN.getCode());
+        productInfoRepository.save(productInfo);
+    }
+
+    @Override
+    public void onSale(String productId) {
+        ProductInfo productInfo = findById(productId);
+
+        // Check status
+        if (productInfo.getProductStatus().equals(ProductStatusEnum.UP.getCode())) {
+            log.error("【上架商品】商品状态不正确，productStatus={}",
+                    EnumUtil.getStatusEnum(productInfo.getProductStatus(), ProductStatusEnum.class)
+                            .getMessage());
+            throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+        //修改商品状态
+        productInfo.setProductStatus(ProductStatusEnum.UP.getCode());
+        productInfoRepository.save(productInfo);
+    }
+
+    @Override
+    public List<ProductInfo> findByCategoryType(Integer categoryType) {
+        return productInfoRepository.findByCategoryType(categoryType);
     }
 }

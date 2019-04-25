@@ -9,12 +9,12 @@ import lombok.Getter;
  * DOWN：下架
  */
 @Getter
-public enum  ProductStatusEnum {
+public enum  ProductStatusEnum implements IStatusEnum{
     UP(0, "在架"),
-    DOWN(1, "下架")
+    DOWN(1, "已下架")
     ;
 
-    private int code;
+    private Integer code;
     private String message;
 
     private ProductStatusEnum(int code, String message){

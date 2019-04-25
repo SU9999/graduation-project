@@ -1,10 +1,12 @@
 package com.su.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.su.enums.OrderStatusEnum;
 import com.su.enums.PayStatusEnum;
 import com.su.model.OrderDetail;
+import com.su.util.EnumUtil;
 import com.su.util.serializer.Date2LongSerializer;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
@@ -59,4 +61,16 @@ public class OrderDTO {
 
     /** 该订单包含的订单详情表列表 */
     private List<OrderDetail> orderDetailList;
+
+    /**
+     * 添加如下两个字段，用于将状态信息（integer）转化为对应的枚举
+     */
+    @JsonIgnore
+    public OrderStatusEnum getOrderStatusEnum(){
+        return EnumUtil.getStatusEnum(orderStatus, OrderStatusEnum.class);
+    }
+    @JsonIgnore
+    public PayStatusEnum getPayStatusEnum(){
+        return EnumUtil.getStatusEnum(payStatus, PayStatusEnum.class);
+    }
 }

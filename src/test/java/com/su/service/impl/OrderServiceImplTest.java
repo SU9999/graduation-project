@@ -83,4 +83,14 @@ public class OrderServiceImplTest {
         OrderDTO result = orderService.pay(orderDTO);
         System.out.println(result);
     }
+
+    @Test
+    public void findAllTest(){
+        PageRequest request = PageRequest.of(0,2);
+        Page<OrderDTO> page = orderService.findAll(request);
+        System.out.println("total pages -> " + page.getTotalPages());
+        System.out.println("total elements -> " + page.getTotalElements());
+        System.out.println("Content:");
+        page.getContent().forEach(System.out::println);
+    }
 }
