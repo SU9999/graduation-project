@@ -3,6 +3,8 @@ package com.su.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
@@ -20,5 +22,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
     }
 
-
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        // 定义一个页面跳转
+        registry.addViewController("/seller/index").setViewName("info/login");
+        registry.addViewController("/seller/register-index").setViewName("info/register");
+    }
 }

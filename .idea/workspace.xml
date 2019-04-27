@@ -2,49 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8ddf9f-2f81-40c0-bc27-51803ba0ab0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/converter/ProductInfo2ProductInfoDTOConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/dto/ProductInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/enums/IStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/form/CategoryForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/form/ProductInfoForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/util/EnumUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/macbook.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mp3/song.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/header.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/nav.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_34_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_34_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_34_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_34_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_34_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_34_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/aspect/SellerAuthAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/constant/CookieConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/constant/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/constant/TemplateConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SecKillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/converter/SellerInfoForm2SellerInfoConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/exception/SellerAuthException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/form/SellerInfoForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/handler/SellerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/model/SellerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/repository/SellerInfoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/PushMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/RedisLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/SecKillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/SellerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/WebSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/impl/PushMessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/impl/SecKillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/service/impl/SellerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/util/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/dumbbell.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/hard-work.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/human.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/microwave-oven.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/muscle-wheel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/netty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/thinking-in-java.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/yinshuiji.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/yoga-mat.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/detail.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/info/login.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/info/register.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/su/redis/RedisTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/su/repository/SellerInfoRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/su/service/impl/PushMessageServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/su/service/impl/SellerServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/enums/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/enums/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/enums/PayStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/enums/ProductStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduation-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/graduation-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/GraduationProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/GraduationProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/config/WeChatAccountConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/config/WeChatAccountConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/controller/BuyerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/BuyerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/controller/BuyerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/BuyerProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/su/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/model/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/model/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/repository/ProductCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/repository/ProductCategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/repository/ProductInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/repository/ProductInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/service/ProductInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/service/ProductInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/su/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/su/viewobject/ResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/su/viewobject/ResultVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/su/service/impl/CategoryServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/su/service/impl/CategoryServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/su/service/impl/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/su/service/impl/OrderServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/su/util/TimeUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/su/util/TimeUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/su/service/impl/ProductInfoServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/su/service/impl/ProductInfoServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,43 +89,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerCategoryController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/BuyerOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="256">
+              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/su/util/TimeUtilTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/ProductInfoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="-1072">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/category/index.ftl">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/BuyerProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="67" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="67" />
+            <state relative-caret-position="136">
+              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/su/form/CategoryForm.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="164">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/cache/annotation/EnableCaching.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/cache/annotation/Cacheable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -104,9 +148,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="HTML File" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -122,57 +166,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/su/util/MathUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pay/success.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/PayController.java" />
-        <option value="$PROJECT_DIR$/doc/h5.p12" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/PayService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/PayServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/model/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/model/ProductCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/BuyerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/su/service/impl/OrderServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/enums/StatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/enums/IStatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/util/EnumUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/dto/OrderDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/enums/PayStatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/order/list02.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/MyController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/SellerOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/enums/OrderStatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/nav.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/header.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/enums/ProductStatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/enums/ResultEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/repository/ProductCategoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/CategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/CategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/converter/ProductInfo2ProductInfoDTOConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/dto/ProductInfoDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/product/list.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/form/ProductInfoForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/model/ProductInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" />
-        <option value="$PROJECT_DIR$/src/test/java/com/su/service/impl/CategoryServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/repository/ProductInfoRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/ProductInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/ProductInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/su/util/TimeUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/su/form/CategoryForm.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/category/index.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" />
+        <option value="$PROJECT_DIR$/src/test/java/com/su/service/impl/ProductInfoServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/category/detail.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/su/controller/SellerCategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/model/SellerInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/repository/SellerInfoRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/su/repository/SellerInfoRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/su/service/impl/SellerServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/info/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/info/register.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/form/SellerInfoForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/converter/SellerInfoForm2SellerInfoConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/SellerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/SellerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/su/redis/RedisTemplateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/constant/RedisConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/constant/CookieConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/util/CookieUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/SellerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/exception/SellerAuthException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/aspect/SellerAuthAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/handler/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/PushMessageService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/su/service/impl/PushMessageServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/constant/TemplateConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/SellerOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/PushMessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/config/WeChatAccountConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/config/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/WebSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/handler/SellerExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/SecKillController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/SecKillService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/RedisLock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/service/impl/SecKillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductInfoVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/viewobject/ResultVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/BuyerOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/GraduationProjectApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/BuyerProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java" />
       </list>
     </option>
   </component>
@@ -218,6 +262,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,67 +303,45 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="su" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="su" type="462c0819:PsiDirectoryNode" />
+              <item name="viewobject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="su" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -330,7 +353,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556205292549" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556378733184" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -339,7 +362,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -349,6 +372,16 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/mp3" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/html" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.su.enums" />
+      <recent name="com.su.dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -356,13 +389,8 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates/order" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/api" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.su.enums" />
-      <recent name="com.su.dto" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/static/html" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.su.exception" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,8 +405,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TimeUtilTest.testString">
-    <configuration name="CategoryServiceImplTest.findByCategoryTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.GraduationProjectApplication">
+    <configuration name="PushMessageServiceImplTest.orderStatusMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graduation-project" />
       <extension name="coverage">
         <pattern>
@@ -387,14 +415,60 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.su.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.su.service.impl.CategoryServiceImplTest" />
-      <option name="METHOD_NAME" value="findByCategoryTypeTest" />
+      <option name="MAIN_CLASS_NAME" value="com.su.service.impl.PushMessageServiceImplTest" />
+      <option name="METHOD_NAME" value="orderStatusMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceImplTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTemplateTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graduation-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.su.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.su.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.su.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="setTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SellerInfoRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graduation-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.su.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.su.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.su.repository.SellerInfoRepositoryTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SellerInfoRepositoryTest.findByOpenidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graduation-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.su.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.su.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.su.repository.SellerInfoRepositoryTest" />
+      <option name="METHOD_NAME" value="findByOpenidTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SellerServiceImplTest.findSellerInfoByOpenid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graduation-project" />
       <extension name="coverage">
         <pattern>
@@ -403,56 +477,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.su.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.su.service.impl.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="findAllTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PayServiceImplTest.createPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graduation-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.su.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.su.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.su.service.impl.PayServiceImplTest" />
-      <option name="METHOD_NAME" value="createPayment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeUtilTest.testDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graduation-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.su.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.su.util" />
-      <option name="MAIN_CLASS_NAME" value="com.su.util.TimeUtilTest" />
-      <option name="METHOD_NAME" value="testDouble" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeUtilTest.testString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graduation-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.su.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.su.util" />
-      <option name="MAIN_CLASS_NAME" value="com.su.util.TimeUtilTest" />
-      <option name="METHOD_NAME" value="testString" />
+      <option name="MAIN_CLASS_NAME" value="com.su.service.impl.SellerServiceImplTest" />
+      <option name="METHOD_NAME" value="findSellerInfoByOpenid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -467,11 +493,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TimeUtilTest.testString" />
-        <item itemvalue="JUnit.CategoryServiceImplTest.findByCategoryTypeTest" />
-        <item itemvalue="JUnit.OrderServiceImplTest.findAllTest" />
-        <item itemvalue="JUnit.TimeUtilTest.testDouble" />
-        <item itemvalue="JUnit.PayServiceImplTest.createPayment" />
+        <item itemvalue="JUnit.PushMessageServiceImplTest.orderStatusMessage" />
+        <item itemvalue="JUnit.RedisTemplateTest.setTest" />
+        <item itemvalue="JUnit.SellerServiceImplTest.findSellerInfoByOpenid" />
+        <item itemvalue="JUnit.SellerInfoRepositoryTest" />
+        <item itemvalue="JUnit.SellerInfoRepositoryTest.findByOpenidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -494,43 +520,45 @@
       <workItem from="1556097739565" duration="5806000" />
       <workItem from="1556154017868" duration="79000" />
       <workItem from="1556154336443" duration="29845000" />
+      <workItem from="1556244362363" duration="22109000" />
+      <workItem from="1556333215423" duration="10176000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TimeUtilTest_testTimeMill - 2019.04.23 at 20h 18m 39s.xml">
-      <configuration name="TimeUtilTest.testTimeMill" configurationId="JUnit" />
+    <history-entry file="SellerInfoRepositoryTest_findByOpenidTest - 2019.04.26 at 12h 30m 34s.xml">
+      <configuration name="SellerInfoRepositoryTest.findByOpenidTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PayServiceImplTest_createPayment - 2019.04.24 at 10h 09m 37s.xml">
-      <configuration name="PayServiceImplTest.createPayment" configurationId="JUnit" />
+    <history-entry file="SellerInfoRepositoryTest_findByOpenidTest - 2019.04.26 at 12h 35m 07s.xml">
+      <configuration name="SellerInfoRepositoryTest.findByOpenidTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PayServiceImplTest_createPayment - 2019.04.24 at 10h 11m 52s.xml">
-      <configuration name="PayServiceImplTest.createPayment" configurationId="JUnit" />
+    <history-entry file="SellerServiceImplTest_findSellerInfoByOpenid - 2019.04.26 at 12h 40m 54s.xml">
+      <configuration name="SellerServiceImplTest.findSellerInfoByOpenid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PayServiceImplTest_createPayment - 2019.04.24 at 10h 20m 31s.xml">
-      <configuration name="PayServiceImplTest.createPayment" configurationId="JUnit" />
+    <history-entry file="SellerInfoRepositoryTest - 2019.04.26 at 13h 19m 48s.xml">
+      <configuration name="SellerInfoRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PayServiceImplTest_createPayment - 2019.04.24 at 10h 26m 23s.xml">
-      <configuration name="PayServiceImplTest.createPayment" configurationId="JUnit" />
+    <history-entry file="SellerServiceImplTest_findSellerInfoByOpenid - 2019.04.26 at 13h 20m 40s.xml">
+      <configuration name="SellerServiceImplTest.findSellerInfoByOpenid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_testDouble - 2019.04.24 at 15h 18m 16s.xml">
-      <configuration name="TimeUtilTest.testDouble" configurationId="JUnit" />
+    <history-entry file="RedisTemplateTest_setTest - 2019.04.26 at 14h 56m 22s.xml">
+      <configuration name="RedisTemplateTest.setTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_testDouble - 2019.04.24 at 15h 18m 32s.xml">
-      <configuration name="TimeUtilTest.testDouble" configurationId="JUnit" />
+    <history-entry file="RedisTemplateTest_setTest - 2019.04.26 at 15h 00m 46s.xml">
+      <configuration name="RedisTemplateTest.setTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_findAllTest - 2019.04.24 at 19h 55m 56s.xml">
-      <configuration name="OrderServiceImplTest.findAllTest" configurationId="JUnit" />
+    <history-entry file="PushMessageServiceImplTest_orderStatusMessage - 2019.04.26 at 17h 36m 32s.xml">
+      <configuration name="PushMessageServiceImplTest.orderStatusMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryServiceImplTest_findByCategoryTypeTest - 2019.04.25 at 22h 28m 10s.xml">
-      <configuration name="CategoryServiceImplTest.findByCategoryTypeTest" configurationId="JUnit" />
+    <history-entry file="PushMessageServiceImplTest_orderStatusMessage - 2019.04.26 at 17h 38m 02s.xml">
+      <configuration name="PushMessageServiceImplTest.orderStatusMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_testString - 2019.04.25 at 22h 46m 02s.xml">
-      <configuration name="TimeUtilTest.testString" configurationId="JUnit" />
+    <history-entry file="PushMessageServiceImplTest_orderStatusMessage - 2019.04.26 at 17h 41m 44s.xml">
+      <configuration name="PushMessageServiceImplTest.orderStatusMessage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97903000" />
+    <option name="totallyTimeSpent" value="130188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,24 +572,24 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20678514" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.2092084" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Web" order="6" sideWeight="0.5011136" side_tool="true" weight="0.20597738" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.3849315" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" weight="0.3849315" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39726028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50080776" side_tool="true" weight="0.32892805" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32892805" />
@@ -623,191 +651,24 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/util/EnumUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/product/list.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="470">
+          <caret line="74" column="66" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/GraduationProjectApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#328#329#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/enums/PayStatusEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/info/register.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/enums/IStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order/list02.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="130" column="22" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="130" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#finish#0;class#OrderServiceImpl#0" />
-            <element signature="method#pay#0;class#OrderServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/MyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/enums/OrderStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css.bak/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="15" selection-end-line="264" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="263" column="1" selection-start-line="263" selection-start-column="1" selection-end-line="263" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/nav.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/nav.ftl.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" lean-forward="true" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/header.ftl.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/header.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order/list.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-end-line="113" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.6.RELEASE/spring-data-commons-2.1.6.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/enums/ProductStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="64" column="57" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="64" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/PayServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="533">
+          <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -815,194 +676,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/error.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/repository/ProductCategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/dto/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="42" />
           <folding>
-            <element signature="e#1708#1709#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
-            <element signature="e#1850#1851#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
+            <element signature="e#545#551#0#HTML" expanded="true" />
+            <element signature="e#551#557#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/util/serializer/Date2LongSerializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/model/SellerInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="464">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/util/JsonUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/form/SellerInfoForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="476">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/util/ResultVOUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/converter/SellerInfoForm2SellerInfoConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/converter/OrderForm2OrderDTOConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/SellerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/repository/SellerInfoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/converter/ProductInfo2ProductInfoDTOConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/dto/ProductInfoDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/su/redis/RedisTemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="153">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.6.RELEASE/spring-data-jpa-2.1.6.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/SellerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/model/ProductInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/constant/RedisConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="67" lean-forward="true" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/product/list.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="55" column="25" lean-forward="true" selection-end-line="122" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/product/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="44" column="18" lean-forward="true" selection-end-line="71" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="141" column="80" lean-forward="true" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/su/service/impl/CategoryServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/repository/ProductInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/ProductInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/ProductInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="136" column="70" selection-start-line="136" selection-start-column="70" selection-end-line="136" selection-end-column="70" />
-          <folding>
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1716#1717#0" expanded="true" />
-            <element signature="method#increaseStock#0;class#ProductInfoServiceImpl#0" />
-            <element signature="method#decreaseStock#0;class#ProductInfoServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/form/ProductInfoForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/model/ProductCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/form/CategoryForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/util/CookieUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
@@ -1012,34 +772,316 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/category/list.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/constant/CookieConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="85">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerCategoryController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/enums/ResultEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+        <state relative-caret-position="255">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/exception/SellerAuthException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/aspect/SellerAuthAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/su/util/TimeUtilTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/info/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="387">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/category/index.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/model/OrderMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="67" />
+        <state relative-caret-position="-107">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-mp/src/main/java/me/chanjar/weixin/mp/api/WxMpTemplateMsgService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/su/service/impl/PushMessageServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/constant/TemplateConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16186" column="4" selection-start-line="16186" selection-start-column="4" selection-end-line="16186" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/config/WeChatAccountConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.bootcss.com_jquery_1.12.4_jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/WebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="166" column="24" selection-start-line="166" selection-start-column="24" selection-end-line="166" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1966">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/PushMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/PushMessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../doc_lib_src/src/WxJava-master.zip!/WxJava-master/weixin-java-mp/src/main/java/me/chanjar/weixin/mp/bean/template/WxMpTemplateMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/handler/SellerExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/SecKillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SecKillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/SecKillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="106" column="74" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#1813#1814#0" expanded="true" />
+            <element signature="e#1976#1977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductInfoVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/RedisLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/viewobject/ProductVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/viewobject/ResultVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/cache/annotation/Cacheable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/cache/annotation/EnableCaching.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/GraduationProjectApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/SellerProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/BuyerOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/service/impl/ProductInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1072">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/su/controller/BuyerProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>

@@ -3,6 +3,7 @@ package com.su.viewobject;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -10,8 +11,9 @@ import java.util.List;
  * 即封装成json格式数据时的外层格式对象
  */
 @Data
-public class ProductVO {
+public class ProductVO implements Serializable {
 
+    private static final long serialVersionUID = 6701791470133212281L;
     /** 类目名称 */
     @JsonProperty("name")
     private String categoryName;

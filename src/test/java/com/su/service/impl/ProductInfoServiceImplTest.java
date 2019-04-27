@@ -65,4 +65,10 @@ public class ProductInfoServiceImplTest {
 
         productInfoService.decreaseStock(cartDTOList);
     }
+
+    @Test
+    public void findByCategoryTypeTest(){
+        List<ProductInfo> productInfoList = productInfoService.findByCategoryType(1110);
+        System.out.println(productInfoList);
+    }
 }

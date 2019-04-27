@@ -110,5 +110,69 @@
         </div>
     </div>
 </div>
+
+<#--弹出的提示框-->
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        提醒
+                    </h4>
+                </div>
+                <div class="modal-body" id="noticeMsg">
+                    你有新的订单：
+                </div>
+                <div class="modal-footer">
+                    <button onclick="javascript:document.getElementById('notice').pause()" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button onclick="location.reload()" type="button" class="btn btn-primary">查看新订单</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<#--播放音乐-->
+    <audio id="notice" loop="loop">
+        <source src="/sell/mp3/song.mp3" type="audio/mpeg">
+    </audio>
+
+<#--引入JQuery-->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<#--引入Bootstrap-->
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+<#--消息通信：WebSocket-->
+<script>
+    var websocket = null;
+    if ('WebSocket' in window) {
+        websocket = new WebSocket('ws://su110.natapp1.cc/sell/webSocket');
+        // websocket = new WebSocket('ws://127.0.0.1:8080/sell/webSocket');
+    } else {
+        alert('浏览器不支持websocket！');
+    }
+
+    websocket.onopen = function (event) {
+        console.log('建立连接');
+    }
+    websocket.onclose = function (event) {
+        console.log('连接关闭');
+    }
+    websocket.onmessage = function (event) {
+        console.log('收到消息：' + event.data);
+        // 对消息进行的操作
+        document.getElementById('noticeMsg').innerText += event.data;
+
+        /*使用JQuery完成弹框的操作*/
+        $('#myModal').modal('show');
+
+        /*使用原生js播放音乐提醒*/
+        document.getElementById('notice').play();
+    }
+
+    // 浏览器窗口关闭前，关闭WebSocket
+    window.onbeforeunload = function (ev) {
+        websocket.close();
+    }
+
+</script>
 </body>
 </html>

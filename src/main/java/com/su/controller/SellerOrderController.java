@@ -4,6 +4,7 @@ import com.su.dto.OrderDTO;
 import com.su.enums.ResultEnum;
 import com.su.exception.SellException;
 import com.su.service.OrderService;
+import com.su.service.PushMessageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -27,6 +28,12 @@ public class SellerOrderController {
 
     @Autowired
     private OrderService orderService;
+
+    /**
+     * 卖家操作订单，更改订单状态后，向买家推送模板消息
+     * */
+    @Autowired
+    private PushMessageService pushMessageService;
 
     /**
      * 订单列表
@@ -66,6 +73,9 @@ public class SellerOrderController {
         }
 
         // 取消订单成功
+        // 推送模板消息
+        pushMessageService.orderStatusMessage(orderDTO);
+
         map.put("msg", ResultEnum.ORDER_CANCEL_SUCCESS.getMsg());
         map.put("url", "/sell/seller/order/list");
         return new ModelAndView("common/success");
@@ -116,6 +126,9 @@ public class SellerOrderController {
         }
 
         // 取消订单成功
+        // 推送模板消息
+        pushMessageService.orderStatusMessage(orderDTO);
+
         map.put("msg", ResultEnum.ORDER_FINISH_SUCCESS.getMsg());
         map.put("url", "/sell/seller/order/list");
         return new ModelAndView("common/success");

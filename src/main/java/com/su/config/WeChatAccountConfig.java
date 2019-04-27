@@ -1,9 +1,12 @@
 package com.su.config;
 
+import com.oracle.tools.packager.mac.MacAppBundler;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+
+import java.util.Map;
 
 /**
  * 公众账号与账号相关的信息：如appId，secret等，从配置文件中获取
@@ -41,4 +44,9 @@ public class WeChatAccountConfig {
      * 接收异步通知的url
      * */
     private String notifyUrl;
+
+    /**
+     * 模板消息id
+     * */
+    private Map<String, String> templateId;
 }

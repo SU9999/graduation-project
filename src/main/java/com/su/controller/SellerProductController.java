@@ -12,6 +12,9 @@ import com.su.util.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -35,6 +38,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/seller/product")
 @Slf4j
+@CacheConfig(cacheNames = "product")
 public class SellerProductController {
 
     @Autowired
@@ -76,6 +80,7 @@ public class SellerProductController {
      * 下架商品
      */
     @GetMapping("/off_sale")
+    @CacheEvict(key = "123")
     public ModelAndView offSale(@RequestParam("productId") String productId,
                                 Map<String, Object> map) {
         try {
@@ -96,6 +101,7 @@ public class SellerProductController {
      * 上架商品
      */
     @GetMapping("/on_sale")
+    @CacheEvict(key = "123")
     public ModelAndView onSale(@RequestParam("productId") String productId,
                                Map<String, Object> map) {
         try {
@@ -134,6 +140,7 @@ public class SellerProductController {
      * 保存卖家提交的商品信息：修改或者新增商品的通用方法
      */
     @PostMapping("/save")
+    @CacheEvict(key = "123")
     public ModelAndView save(@Valid ProductInfoForm productInfoForm,
                              BindingResult bindingResult,
                              Map<String, Object> map) {

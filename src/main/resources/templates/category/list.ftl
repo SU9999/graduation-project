@@ -27,7 +27,7 @@
                             <th>Type</th>
                             <th>创建时间</th>
                             <th>修改时间</th>
-                            <th>操作</th>
+                            <th colspan="2">操作</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -41,6 +41,9 @@
                             <td>${category.updateTime}</td>
                             <td>
                         <a href="/sell/seller/category/index?categoryId=${category.categoryId}">修改</a>
+                            </td>
+                            <td>
+                        <a href="/sell/seller/category/detail?categoryId=${category.categoryId}">详情</a>
                             </td>
                             </tr>
                         </#list>

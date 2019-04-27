@@ -10,6 +10,7 @@ import com.su.viewobject.ProductVO;
 import com.su.viewobject.ResultVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,6 +36,7 @@ public class BuyerProductController {
 
 
     @GetMapping("/list")
+    @Cacheable(cacheNames = "product", key = "123", unless = "#result.getCode() != 0")
     public ResultVO list(){
         /* 查询所有上架的商品 */
         List<ProductInfo> productInfoList = productInfoService.findUpAll();

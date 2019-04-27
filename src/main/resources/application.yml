@@ -21,6 +21,11 @@ spring:
   #全局的配置：当对象属性值为null时，不将其序列化到json数据中
   #jackson:
    # default-property-inclusion: non_null
+  redis:
+    host: 172.18.114.212
+    port: 6379
+#    password:
+
 server:
   servlet:
     # 临时去掉路径名，用于微信验证域名
@@ -34,4 +39,6 @@ wechat:
   mchKey: c976503d34ca432c601361f969fd8d85
   keyPath: /Users/mac/Documents/workspace/graduation/graduation-project/doc/h5.p12
   notifyUrl: http://su110.natapp1.cc/sell/pay/notify
+  templateId:
+    orderStatus: fCVzKjV-KFEzL8as0Wi0vw0ddT--GLPlWPcew-IRo3w
 

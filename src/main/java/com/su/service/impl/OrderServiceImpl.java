@@ -15,6 +15,7 @@ import com.su.repository.OrderMasterRepository;
 import com.su.service.OrderService;
 import com.su.service.PayService;
 import com.su.service.ProductInfoService;
+import com.su.service.WebSocket;
 import com.su.util.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -51,6 +52,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private PayService payService;
+
+    @Autowired
+    private WebSocket webSocket;
 
     /**
      * 添加事务操作
@@ -102,6 +106,10 @@ public class OrderServiceImpl implements OrderService {
 
         // 返回orderDTO
         BeanUtils.copyProperties(orderMaster, orderDTO);
+
+        // 创建新订单时，给前端页面发送一个webSocket
+        webSocket.sendMessage(orderDTO.getOrderId());
+
         return orderDTO;
     }
 

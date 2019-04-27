@@ -1,5 +1,7 @@
 package com.su.controller;
 
+import com.su.converter.ProductInfo2ProductInfoDTOConverter;
+import com.su.dto.ProductInfoDTO;
 import com.su.form.CategoryForm;
 import com.su.model.ProductCategory;
 import com.su.model.ProductInfo;
@@ -21,6 +23,7 @@ import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 /**
  * 卖家对类目的操作Controller
@@ -117,5 +120,35 @@ public class SellerCategoryController {
         BeanUtils.copyProperties(categoryForm, productCategory);
         categoryService.save(productCategory);
         return new ModelAndView("redirect:/seller/category/list");
+    }
+
+    /**
+     * 查询一个类目下的所有商品信息
+     */
+    @GetMapping("/detail")
+    public ModelAndView detail(@RequestParam("categoryId") Integer categoryId,
+                               Map<String, Object> map){
+        //根据该类目id，查询出该类目的具体信息。
+        ProductCategory category = null;
+        try {
+            category = categoryService.findById(categoryId);
+            map.put("category", category);
+        } catch (Exception e){
+            log.error("【查询类目详情】类目不存在，categoryId={}", categoryId);
+            map.put("msg", e.getMessage());
+            map.put("url", "/sell/seller/category/list");
+            return new ModelAndView("common/error", map);
+        }
+
+        // 如果类目存在，则根据categoryType查询出该类目下所有的商品信息
+        List<ProductInfoDTO> productInfoDTOList = new ArrayList<>();
+        List<ProductInfo> productInfoList = productInfoService.findByCategoryType(category.getCategoryType());
+        for (ProductInfo productInfo : productInfoList) {
+            ProductInfoDTO productInfoDTO = ProductInfo2ProductInfoDTOConverter.convert(productInfo);
+            productInfoDTO.setCategoryName(category.getCategoryName());
+            productInfoDTOList.add(productInfoDTO);
+        }
+        map.put("productInfoList", productInfoDTOList);
+        return new ModelAndView("category/detail", map);
     }
 }

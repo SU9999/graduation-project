@@ -11,11 +11,13 @@ import com.su.repository.OrderDetailRepository;
 import com.su.repository.OrderMasterRepository;
 import com.su.service.BuyerService;
 import com.su.service.OrderService;
+import com.su.service.PushMessageService;
 import com.su.util.ResultVOUtil;
 import com.su.viewobject.ResultVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
@@ -47,6 +49,10 @@ public class BuyerOrderController {
     @Autowired
     private BuyerService buyerService;
 
+    /** 模板消息推送 */
+    @Autowired
+    private PushMessageService pushMessageService;
+
     /** 创建订单 */
     @PostMapping("/create")
     public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
@@ -70,6 +76,9 @@ public class BuyerOrderController {
         OrderDTO resultOrderDTO = orderService.create(orderDTO);
         Map<String, String> map = new HashMap<>();
         map.put("orderId", resultOrderDTO.getOrderId());
+
+        /** 创建新订单成功后，给买家推送一条模板消息 */
+        pushMessageService.orderStatusMessage(resultOrderDTO);
 
         return ResultVOUtil.success(map);
     }
